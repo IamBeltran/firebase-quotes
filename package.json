@@ -38,34 +38,8 @@
     "test": "./test"
   },
   "scripts": {
-    "quick:test": "cross-env NODE_ENV=test nodemon ./quick.test.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:mocha": "gulp test:simple"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "*.json"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "test": "gulp test:simple",
+    "quick:test": "cross-env NODE_ENV=test nodemon ./quick.test.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -104,6 +78,28 @@
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "engines": {},
   "engineStrict": false,

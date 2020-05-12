@@ -64,8 +64,8 @@ gulp.task('eslint:fail', loadTask('eslint', 'fail'));
 // ▶ TASK: gulp eslint:file --file ./src/index.js --fix
 gulp.task('eslint:file', loadTask('eslint', 'file'));
 
-// ▶ TASK: gulp watch
-gulp.task('watch', loadTask('eslint', 'watch'));
+// ▶ TASK: gulp eslint:watch
+gulp.task('eslint:watch', loadTask('eslint', 'watch'));
 
 // ▶ TASK: gulp eslint:watch
 gulp.task('eslint:watch', () => {

@@ -121,6 +121,9 @@ test.*.js
 # backup directorie
 backup/
 
+# reports directorie
+reports/
+
 # Matches the files with patron LOCAL_<name>.md
 LOCAL_*.md
 
